@@ -1,6 +1,7 @@
 # Importing essential libraries
 from flask import Flask, render_template, request, jsonify
 import pickle
+import re
 
 # Load the Multinomial Naive Bayes model and CountVectorizer object from disk
 filename = 'restaurant-sentiment-mnb-model.pkl'
